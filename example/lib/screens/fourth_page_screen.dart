@@ -5,11 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 class FourthPageScreen extends StatefulWidget {
+  const FourthPageScreen({super.key});
+
   @override
-  _FourthPageScreenState createState() => _FourthPageScreenState();
+  FourthPageScreenState createState() => FourthPageScreenState();
 }
 
-class _FourthPageScreenState extends State<FourthPageScreen> {
+class FourthPageScreenState extends State<FourthPageScreen> {
   @override
   Widget build(BuildContext context) {
     return SizerUtil.orientation == Orientation.portrait
@@ -20,7 +22,7 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
   Widget _widPortrait() {
     return Material(
       child: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           height: 100.h,
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -28,8 +30,8 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
               _widMainImg(),
               Expanded(
                   child: Column(
-                    children: [_widTitle(), _widDesc()],
-                  )),
+                children: [_widTitle(), _widDesc()],
+              )),
             ],
           ),
         ),
@@ -40,14 +42,14 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
   _widMainImg() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 3.w),
-      child: Image.asset(Constant.IMG_4, height: 50.h),
+      child: Image.asset(Constant.img4, height: 50.h),
     );
   }
 
   _widTitle() {
     return Padding(
       padding: EdgeInsets.only(top: 1.5.h),
-      child: Text(Strings.APP_NAME,
+      child: Text(Strings.appname,
           style: GoogleFonts.lato(
             textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
           )),
@@ -58,11 +60,11 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
     return Padding(
         padding: EdgeInsets.only(right: 10.w, left: 10.w, top: 2.h),
         child: Text(
-          Strings.APP_DESC,
+          Strings.appDesc,
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:
-            TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
+                TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
           ),
         ));
   }
@@ -71,15 +73,15 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
   _widLandScape() {
     return Material(
       child: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           height: 100.h,
           child: Column(
             children: [
               _widMainImgLand(),
               Expanded(
                   child: Column(
-                    children: [_widTitleLand(), _widDescLand()],
-                  )),
+                children: [_widTitleLand(), _widDescLand()],
+              )),
             ],
           ),
         ),
@@ -90,14 +92,14 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
   _widMainImgLand() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 3.w),
-      child: Image.asset(Constant.IMG_4, height: 25.h),
+      child: Image.asset(Constant.img4, height: 25.h),
     );
   }
 
   _widTitleLand() {
     return Padding(
       padding: EdgeInsets.only(top: 1.0.h),
-      child: Text(Strings.APP_NAME,
+      child: Text(Strings.appname,
           style: GoogleFonts.lato(
             textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
           )),
@@ -108,11 +110,11 @@ class _FourthPageScreenState extends State<FourthPageScreen> {
     return Padding(
         padding: EdgeInsets.only(right: 25.w, left: 25.w, top: 1.5.h),
         child: Text(
-          Strings.APP_DESC,
+          Strings.appDesc,
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:
-            TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
+                TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
           ),
         ));
   }

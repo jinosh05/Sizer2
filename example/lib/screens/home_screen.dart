@@ -4,16 +4,19 @@ import 'package:example/util/color_util.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 import 'first_page_screen.dart';
 import 'fourth_page_screen.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  HomeScreenState createState() => HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  PageController _pageController = PageController();
+class HomeScreenState extends State<HomeScreen> {
+  final PageController _pageController = PageController();
   int _pageIndex = 0;
 
   @override
@@ -26,19 +29,17 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SizedBox(
           height: 7.h,
           width: 7.h,
-          child:
-
-          FloatingActionButton(
+          child: FloatingActionButton(
             onPressed: () {
               _pageController.animateToPage(_pageIndex < 3 ? _pageIndex + 1 : 0,
-                  duration: Duration(milliseconds: 500),
+                  duration: const Duration(milliseconds: 500),
                   curve: Curves.decelerate);
             },
+            backgroundColor: getColor(),
             child: Icon(
               _pageIndex < 3 ? Icons.arrow_forward : Icons.done,
               size: 3.h,
             ),
-            backgroundColor: getColor(),
           ),
         ),
       ),
@@ -50,12 +51,12 @@ class _HomeScreenState extends State<HomeScreen> {
             PageView(
               controller: _pageController,
               onPageChanged: (value) {
-                print('val:: $value');
+                debugPrint('val:: $value');
                 setState(() {
                   _pageIndex = value;
                 });
               },
-              children: [
+              children: const [
                 FirstPageScreen(),
                 SecondPageScreen(),
                 ThirdPageScreen(),
@@ -91,9 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
 
-
     // Without this plugin
-   /* return Align(
+    /* return Align(
       alignment: Alignment.bottomCenter,
       child: Padding(
         padding: EdgeInsets.only(bottom: 30.0),
@@ -113,7 +113,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );*/
-
   }
 
   getColor() {

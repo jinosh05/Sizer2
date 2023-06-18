@@ -5,11 +5,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 class FirstPageScreen extends StatefulWidget {
+  const FirstPageScreen({super.key});
+
   @override
-  _FirstPageScreenState createState() => _FirstPageScreenState();
+  FirstPageScreenState createState() => FirstPageScreenState();
 }
 
-class _FirstPageScreenState extends State<FirstPageScreen> {
+class FirstPageScreenState extends State<FirstPageScreen> {
   @override
   Widget build(BuildContext context) {
     return SizerUtil.orientation == Orientation.portrait
@@ -20,7 +22,7 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
   Widget _widPortrait() {
     return Material(
       child: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           height: 100.h,
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -40,14 +42,14 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
   _widMainImg() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 3.w),
-      child: Image.asset(Constant.IMG_1, height: 50.h),
+      child: Image.asset(Constant.img1, height: 50.h),
     );
   }
 
   _widTitle() {
     return Padding(
       padding: EdgeInsets.only(top: 1.5.h),
-      child: Text(Strings.APP_NAME,
+      child: Text(Strings.appname,
           style: GoogleFonts.lato(
             textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
           )),
@@ -58,7 +60,7 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
     return Padding(
         padding: EdgeInsets.only(right: 10.w, left: 10.w, top: 2.h),
         child: Text(
-          Strings.APP_DESC,
+          Strings.appDesc,
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:
@@ -71,7 +73,7 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
   _widLandScape() {
     return Material(
       child: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           height: 100.h,
           child: Column(
             children: [
@@ -90,14 +92,14 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
   _widMainImgLand() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 3.w),
-      child: Image.asset(Constant.IMG_1, height: 25.h),
+      child: Image.asset(Constant.img1, height: 25.h),
     );
   }
 
   _widTitleLand() {
     return Padding(
       padding: EdgeInsets.only(top: 1.0.h),
-      child: Text(Strings.APP_NAME,
+      child: Text(Strings.appname,
           style: GoogleFonts.lato(
             textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
           )),
@@ -108,7 +110,7 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
     return Padding(
         padding: EdgeInsets.only(right: 25.w, left: 25.w, top: 1.5.h),
         child: Text(
-          Strings.APP_DESC,
+          Strings.appDesc,
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:

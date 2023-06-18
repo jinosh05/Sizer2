@@ -4,11 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FirstPageScreenWithoutSizer extends StatefulWidget {
+  const FirstPageScreenWithoutSizer({super.key});
+
   @override
-  _FirstPageScreenWithoutSizerState createState() => _FirstPageScreenWithoutSizerState();
+  FirstPageScreenWithoutSizerState createState() =>
+      FirstPageScreenWithoutSizerState();
 }
 
-class _FirstPageScreenWithoutSizerState extends State<FirstPageScreenWithoutSizer> {
+class FirstPageScreenWithoutSizerState
+    extends State<FirstPageScreenWithoutSizer> {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -18,11 +22,11 @@ class _FirstPageScreenWithoutSizerState extends State<FirstPageScreenWithoutSize
           Expanded(
               child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               widTitle(),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               widDesc()
@@ -35,27 +39,28 @@ class _FirstPageScreenWithoutSizerState extends State<FirstPageScreenWithoutSize
 
   widMainImg() {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 15.0),
-      child: Image.asset(Constant.IMG_1, height: MediaQuery.of(context).size.height/2),
+      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+      child: Image.asset(Constant.img1,
+          height: MediaQuery.of(context).size.height / 2),
     );
   }
 
   widTitle() {
-    return Text(Strings.APP_NAME,
+    return Text(Strings.appname,
         style: GoogleFonts.lato(
-          textStyle: TextStyle(fontSize: 35.0, color: Colors.black),
+          textStyle: const TextStyle(fontSize: 35.0, color: Colors.black),
         ));
   }
 
   widDesc() {
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 30.0),
+        padding: const EdgeInsets.symmetric(horizontal: 30.0),
         child: Text(
-          Strings.APP_DESC,
+          Strings.appDesc,
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
-            textStyle:
-                TextStyle(height: 1.3, fontSize: 15.0, color: Colors.grey),
+            textStyle: const TextStyle(
+                height: 1.3, fontSize: 15.0, color: Colors.grey),
           ),
         ));
   }

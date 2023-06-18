@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ColorUtil{
-  static const String _color1='#FF725E';
-  static const String _color2='#BA68C8';
-  static const String _color3='#FFC100';
-  static const String _color4='#7E57C2';
+class ColorUtil {
+  static const String _color1 = '#FF725E';
+  static const String _color2 = '#BA68C8';
+  static const String _color3 = '#FFC100';
+  static const String _color4 = '#7E57C2';
 
   static color1() {
     return getColorFromHex(_color1);
@@ -26,11 +26,9 @@ class ColorUtil{
     hexColor = hexColor.toUpperCase().replaceAll('#', '');
 
     if (hexColor.length == 6) {
-      hexColor = 'FF' + hexColor;
+      hexColor = 'FF$hexColor';
     }
 
     return Color(int.parse(hexColor, radix: 16));
   }
-
-
 }
