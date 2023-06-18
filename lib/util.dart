@@ -18,6 +18,9 @@ class SizerUtil {
   /// Device's Width
   static late double width;
 
+  /// Device's Width
+  static late double ratio;
+
   /// Sets the Screen's size and Device's Orientation,
   /// BoxConstraints, Height, and Width
   static void setScreenSize(
@@ -34,6 +37,10 @@ class SizerUtil {
       width = boxConstraints.maxHeight;
       height = boxConstraints.maxWidth;
     }
+
+    ratio = width / height;
+    double pixelDensity = window.devicePixelRatio;
+    ratio = (ratio) + ((pixelDensity + ratio) / 2);
 
     // Sets ScreenType
     if (kIsWeb) {
@@ -61,8 +68,8 @@ class SizerUtil {
     return width < 600
         ? smallSize //'phone'
         : width >= 600 && width <= 1024
-        ? mediumSize //'tablet'
-        : largeSize; //'desktop';
+            ? mediumSize //'tablet'
+            : largeSize; //'desktop';
   }
 }
 
