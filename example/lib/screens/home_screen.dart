@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
               dotWidth: 1.5.h,
               dotHeight: 1.5.h,
               paintStyle: PaintingStyle.fill,
-              dotColor: Colors.grey[300],
+              dotColor: Colors.grey[300]!,
               activeDotColor: getColor()),
         ),
       ),
