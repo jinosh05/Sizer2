@@ -51,7 +51,7 @@ class FirstPageScreenState extends State<FirstPageScreen> {
       padding: EdgeInsets.only(top: 1.5.h),
       child: Text(Strings.appname,
           style: GoogleFonts.lato(
-            textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
+            textStyle: TextStyle(fontSize: 15.f, color: Colors.black),
           )),
     );
   }
@@ -64,7 +64,7 @@ class FirstPageScreenState extends State<FirstPageScreen> {
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:
-                TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
+                TextStyle(height: 1.3, fontSize: 8.f, color: Colors.grey),
           ),
         ));
   }
@@ -101,7 +101,7 @@ class FirstPageScreenState extends State<FirstPageScreen> {
       padding: EdgeInsets.only(top: 1.0.h),
       child: Text(Strings.appname,
           style: GoogleFonts.lato(
-            textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
+            textStyle: TextStyle(fontSize: 30.f, color: Colors.black),
           )),
     );
   }
@@ -114,7 +114,7 @@ class FirstPageScreenState extends State<FirstPageScreen> {
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             textStyle:
-                TextStyle(height: 1.3, fontSize: 13.sp, color: Colors.grey),
+                TextStyle(height: 1.3, fontSize: 20.f, color: Colors.grey),
           ),
         ));
   }
