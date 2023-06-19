@@ -133,3 +133,8 @@
 
 * Dart 3.0 SDK implemented
 * Added font support
+
+## [2.0.16] - 19.06.2023.
+
+* .sp Improved
+* Added Icon documentation
