@@ -1,4 +1,4 @@
-# sizer
+# sizer2
 
 <p align="center" >
   <strong>Sizer2 is helps you to create responsive UI easily.</strong>
@@ -32,7 +32,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.15
+  sizer2: ^2.0.15
 ```
 
 # Parameters ⚙️ 
@@ -84,7 +84,7 @@ import 'package:sizer2/sizer2.dart';
 ## Font size 🆎
 ```dart
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.f),
+      'Sizer',style: TextStyle(fontSize: 15.sp),
     );
 ```
 
