@@ -38,6 +38,8 @@ class SizerUtil {
       height = boxConstraints.maxWidth;
     }
 
+    log("Width $width  Height $height");
+
     ratio = width / height;
     double pixelDensity = window.devicePixelRatio;
     ratio = (ratio) + ((pixelDensity + ratio) / 2);
