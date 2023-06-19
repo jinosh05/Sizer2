@@ -1,6 +1,6 @@
 import 'package:example/screens/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
+import 'package:sizer2/sizer2.dart';
 
 void main() {
   runApp(const MyApp());

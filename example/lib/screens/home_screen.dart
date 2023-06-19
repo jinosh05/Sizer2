@@ -2,7 +2,7 @@ import 'package:example/screens/second_page_screen.dart';
 import 'package:example/screens/third_page_screen.dart';
 import 'package:example/util/color_util.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
+import 'package:sizer2/sizer2.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'first_page_screen.dart';

@@ -2,7 +2,7 @@ import 'package:example/util/constant.dart';
 import 'package:example/util/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sizer/sizer.dart';
+import 'package:sizer2/sizer2.dart';
 
 class SecondPageScreen extends StatefulWidget {
   const SecondPageScreen({super.key});
