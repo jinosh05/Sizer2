@@ -12,7 +12,7 @@ extension SizerExt on num {
   double get w => this * SizerUtil.width / 100;
 
   /// Calculates the sp (Scalable Pixel) depending on the device's screen size
-  double get sp => this * (SizerUtil.width / 3) / 100;
+  double get sp => (SizerUtil.ratio * this * 0.77) + this;
 
   /// Calculates the font depending on the device's screen size
   /// You can also use it for IconSize too.
