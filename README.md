@@ -84,9 +84,18 @@ import 'package:sizer2/sizer2.dart';
 ## Font size 🆎
 ```dart
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.sp),
+      'Sizer',style: TextStyle(fontSize: 15.f),
     );
 ```
+
+
+## Icon size 🆎
+```dart
+    Icon(
+     Icons.home,size: 12.f,
+    );
+```
+
 
 ## Square Widget 🟩
 
