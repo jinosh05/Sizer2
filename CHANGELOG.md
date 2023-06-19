@@ -128,3 +128,8 @@
 ## [2.0.14] - 15.09.2021.
 
 * add method for responsive web
+
+## [2.0.15] - 19.06.2023.
+
+* Dart 3.0 SDK implemented
+* Added font support

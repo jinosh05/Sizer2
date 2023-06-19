@@ -1,19 +1,19 @@
 # sizer
 
 <p align="center" >
-  <strong>Sizer is helps you to create responsive UI easily.</strong>
+  <strong>Sizer2 is helps you to create responsive UI easily.</strong>
   <br />
   <br />
-  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="180px" src="https://raw.githubusercontent.com/TechnoUrmish/Sizer/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/jinosh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </p>
 
 <br />
 
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
-![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
+![Alt Text](https://github.com/jinosh05/Sizer2/blob/master/example/images/img_ss_with_lib.png)
 
-![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_without_lib.png)
+![Alt Text](https://github.com/jinosh05/Sizer2/blob/master/example/images/img_ss_without_lib.png)
 
 # Content
 
@@ -24,14 +24,15 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 - [Note](#note)
 
 # Existing User
-## Hello Existing users, I have updated the package for supporting Flutter 2.0 and solving many bugs then Whenever you update 1.x.x to 2.x.x will be got many errors so please update the package with the new below code. 
+## Hello Existing users, I have updated the package for supporting Flutter 3.10.0 and solving many bugs then. Kindly Update your repo to latest SDK for Support.
+
 
 # Installation ⬇️
 Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.14
+  sizer: ^2.0.15
 ```
 
 # Parameters ⚙️ 
@@ -39,6 +40,7 @@ dependencies:
 * `.h` - Returns a calculated height based on the device
 * `.w` - Returns a calculated width based on the device
 * `.sp` - Returns a calculated sp based on the device
+* `.f` - Returns a calculated font based on the device
 * `SizerUtil.orientation` - for screen orientation portrait or landscape
 * `SizerUtil.deviceType` - for device type mobile or tablet
 
@@ -82,7 +84,7 @@ import 'package:sizer2/sizer2.dart';
 ## Font size 🆎
 ```dart
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.sp),
+      'Sizer',style: TextStyle(fontSize: 15.f),
     );
 ```
 
@@ -149,4 +151,4 @@ import 'package:sizer2/sizer2.dart';
 
 ## Issue and feedback 💭 
 
-If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/TechnoUrmish/Sizer/issues) for us to have a discussion on it.
+If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/jinosh05/Sizer2/issues) for us to have a discussion on it.
