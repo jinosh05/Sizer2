@@ -1,4 +1,4 @@
-part of sizer2;
+part of sizer_pro;
 
 extension SizerExt on num {
   /// Calculates the height depending on the device's screen size

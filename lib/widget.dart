@@ -1,4 +1,4 @@
-part of sizer2;
+part of sizer_pro;
 
 /// Provides `Context`, `Orientation`, and `DeviceType` parameters to the builder function
 typedef ResponsiveBuild = Widget Function(

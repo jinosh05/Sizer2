@@ -1,7 +1,7 @@
-# sizer2
+# sizer_pro
 
 <p align="center" >
-  <strong>Sizer2 is helps you to create responsive UI easily.</strong>
+  <strong>sizer_pro is helps you to create responsive UI easily.</strong>
   <br />
   <br />
 <a href="https://www.buymeacoffee.com/jinosh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
@@ -32,7 +32,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer2: ^2.0.15
+  sizer_pro: ^2.0.15
 ```
 
 # Parameters ⚙️ 
@@ -48,7 +48,7 @@ dependencies:
 
 ## Add the following imports to your Dart code: 
 ```dart
-import 'package:sizer2/sizer2.dart';
+import 'package:sizer_pro/sizer_pro.dart';
 ```
 
 ## Wrap MaterialApp with ResponsiveSizer widget
@@ -62,7 +62,7 @@ ResponsiveSizer(
 
 Whenever you use height and width first import sizer package.
 ```dart
-import 'package:sizer2/sizer2.dart';
+import 'package:sizer_pro/sizer_pro.dart';
 ```
 
 ## Widget Size 🕓
@@ -155,9 +155,9 @@ You need to import `sizer` package in order to access `number.h`, `number.w`, an
 
 One workaround is to type `Device` so that the auto import suggestion would show up:
 ```dart
-import 'package:sizer2/sizer2.dart';
+import 'package:sizer_pro/sizer_pro.dart';
 ```
 
 ## Issue and feedback 💭 
 
-If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/jinosh05/Sizer2/issues) for us to have a discussion on it.
+If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/jinosh05/sizer_pro/issues) for us to have a discussion on it.

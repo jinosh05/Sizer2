@@ -1,4 +1,4 @@
-part of sizer2;
+part of sizer_pro;
 
 class SizerUtil {
   /// Device's BoxConstraints
