@@ -32,7 +32,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer_pro: ^2.0.15
+  sizer_pro: ^2.0.17
 ```
 
 # Parameters ⚙️ 
@@ -48,7 +48,7 @@ dependencies:
 
 ## Add the following imports to your Dart code: 
 ```dart
-import 'package:sizer_pro/sizer_pro.dart';
+import 'package:sizer_pro/sizer.dart';
 ```
 
 ## Wrap MaterialApp with ResponsiveSizer widget
@@ -62,7 +62,7 @@ ResponsiveSizer(
 
 Whenever you use height and width first import sizer package.
 ```dart
-import 'package:sizer_pro/sizer_pro.dart';
+import 'package:sizer_pro/sizer.dart';
 ```
 
 ## Widget Size 🕓
@@ -155,7 +155,7 @@ You need to import `sizer` package in order to access `number.h`, `number.w`, an
 
 One workaround is to type `Device` so that the auto import suggestion would show up:
 ```dart
-import 'package:sizer_pro/sizer_pro.dart';
+import 'package:sizer_pro/sizer.dart';
 ```
 
 ## Issue and feedback 💭 

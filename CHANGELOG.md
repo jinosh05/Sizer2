@@ -138,3 +138,7 @@
 
 * .sp Improved
 * Added Icon documentation
+
+## [2.0.17] - 20.06.2023.
+
+* Renamed Package
