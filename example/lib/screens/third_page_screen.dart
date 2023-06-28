@@ -5,7 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer_pro/sizer.dart';
 
 class ThirdPageScreen extends StatefulWidget {
-  const ThirdPageScreen({super.key});
+  const ThirdPageScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   ThirdPageScreenState createState() => ThirdPageScreenState();

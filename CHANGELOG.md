@@ -152,6 +152,11 @@
 * Fix Preview image
 
 
+## [2.1.0] - 28.06.2023.
+
+* Added Compatability for Older Version
+
+
 ## [3.0.0-alpha] - 28.06.2023.
 
 * Removed unwanted dependencies

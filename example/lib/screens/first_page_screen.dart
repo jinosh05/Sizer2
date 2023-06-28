@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer_pro/sizer.dart';
 
 class FirstPageScreen extends StatefulWidget {
-  const FirstPageScreen({super.key});
+  const FirstPageScreen({Key? key}) : super(key: key);
 
   @override
   FirstPageScreenState createState() => FirstPageScreenState();

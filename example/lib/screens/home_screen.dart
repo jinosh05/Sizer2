@@ -9,7 +9,9 @@ import 'first_page_screen.dart';
 import 'fourth_page_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   HomeScreenState createState() => HomeScreenState();

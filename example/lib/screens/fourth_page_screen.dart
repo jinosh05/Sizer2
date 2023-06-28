@@ -5,7 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer_pro/sizer.dart';
 
 class FourthPageScreen extends StatefulWidget {
-  const FourthPageScreen({super.key});
+  const FourthPageScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   FourthPageScreenState createState() => FourthPageScreenState();
