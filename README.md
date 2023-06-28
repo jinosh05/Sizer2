@@ -156,7 +156,7 @@ If you want to give support for both mobile and tablet then make separate widget
 
 # Note
 
-You need to import `sizer` package in order to access `number.h`, `number.w`, and `number.sp`
+You need to import `sizer` package in order to access `number.h`, `number.w`,`number.f`, and `number.sp`
 
 **Auto import in VSCode and Android Studio doesn't work for dart extension methods.** Typing `10.h` would not bring up auto import suggestion for this package
 
