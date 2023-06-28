@@ -1,6 +1,6 @@
 name: sizer_pro
 description: A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
-version: 2.0.19
+version: 3.0.0-alpha
 homepage: https://github.com/jinosh05/sizer_pro
 
 environment:
@@ -8,7 +8,6 @@ environment:
   flutter: ">=3.10.0"
 
 dependencies:
-  universal_io: ^2.0.4
   flutter:
     sdk: flutter
 
