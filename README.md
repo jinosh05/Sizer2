@@ -1,5 +1,12 @@
 # sizer_pro
 
+
+[![Pub](https://img.shields.io/pub/v/sizer_pro.svg)](https://pub.dartlang.org/packages/sizer_pro) 
+[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/sarbagyastha/Sizer2/blob/master/LICENSE)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jinosh05/Sizer2.svg)](https://github.com/jinosh05/Sizer2)
+[![GitHub stars](https://img.shields.io/github/stars/jinosh05/Sizer2.svg?style=social)](https://github.com/jinosh05/Sizer2)
+
+
 <p align="center" >
   <strong>sizer_pro is helps you to create responsive UI easily.</strong>
   <br />
