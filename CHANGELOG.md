@@ -155,6 +155,7 @@
 ## [2.1.0] - 28.06.2023.
 
 * Added Compatability for Older Version
+* SDK version downgraded to Dart SDK 2.12 
 
 
 ## [3.0.0-alpha] - 28.06.2023.

@@ -29,9 +29,18 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 - [Parameters](#parameters)
 - [Suggestion](#suggestion)
 - [Note](#note)
+<br>
+
+<br>
 
 # Existing User
-## Hello Existing users, I have updated the package for supporting Flutter 3.10.0 and solving many bugs then. Kindly Update your repo to latest SDK for Support.
+## Dart 3.0 Users
+ Hello Existing users, I have updated the package for supporting Flutter 3.10.0 in alpha versions and Kindly Update your repo to latest SDK for Support.
+<br>
+
+## Dart 2.0 Users
+We still provide Support for Lower version compatibilities and You can continue using the Stable versions without any lag.
+<br>
 
 
 # Installation ⬇️
@@ -39,7 +48,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer_pro: ^3.0.0-alpha
+  sizer_pro: ^2.1.0
 ```
 
 # Parameters ⚙️ 
