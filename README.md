@@ -58,9 +58,9 @@ dependencies:
 import 'package:sizer_pro/sizer.dart';
 ```
 
-## Wrap MaterialApp with ResponsiveSizer widget
+## Wrap MaterialApp with Sizer widget
 ```dart
-ResponsiveSizer(
+Sizer(
       builder: (context, orientation, deviceType) {
         return MaterialApp();
       }

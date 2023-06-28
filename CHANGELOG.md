@@ -150,3 +150,9 @@
 ## [2.0.19] - 20.06.2023.
 
 * Fix Preview image
+
+
+## [3.0.0-alpha] - 28.06.2023.
+
+* Removed unwanted dependencies
+* Readme updated
