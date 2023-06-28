@@ -2,9 +2,9 @@
 
 
 [![Pub](https://img.shields.io/pub/v/sizer_pro.svg)](https://pub.dartlang.org/packages/sizer_pro) 
-[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/sarbagyastha/Sizer2/blob/master/LICENSE)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jinosh05/Sizer2.svg)](https://github.com/jinosh05/Sizer2)
-[![GitHub stars](https://img.shields.io/github/stars/jinosh05/Sizer2.svg?style=social)](https://github.com/jinosh05/Sizer2)
+[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/jinosh05/sizer_pro/blob/master/LICENSE)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jinosh05/sizer_pro.svg)](https://github.com/jinosh05/sizer_pro)
+[![GitHub stars](https://img.shields.io/github/stars/jinosh05/sizer_pro.svg?style=social)](https://github.com/jinosh05/sizer_pro)
 
 
 <p align="center" >
@@ -18,9 +18,9 @@
 
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
-![Alt Text](https://github.com/jinosh05/Sizer2/blob/master/example/images/img_ss_with_lib.png)
+![Alt Text](https://github.com/jinosh05/sizer_pro/blob/master/example/images/img_ss_with_lib.png)
 
-![Alt Text](https://github.com/jinosh05/Sizer2/blob/master/example/images/img_ss_without_lib.png)
+![Alt Text](https://github.com/jinosh05/sizer_pro/blob/master/example/images/img_ss_without_lib.png)
 
 # Content
 
