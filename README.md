@@ -96,7 +96,7 @@ import 'package:sizer_pro/sizer.dart';
 ```
 
 
-## Icon size 🆎
+## Icon size 💡
 ```dart
     Icon(
      Icons.home,size: 12.f,
