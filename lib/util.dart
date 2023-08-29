@@ -23,8 +23,8 @@ class SizerUtil {
 
   /// Sets the Screen's size and Device's Orientation,
   /// BoxConstraints, Height, and Width
-  static void setScreenSize(
-      BoxConstraints constraints, Orientation currentOrientation) {
+  static void setScreenSize(BoxConstraints constraints,
+      Orientation currentOrientation, BuildContext context) {
     // Sets boxconstraints and orientation
     boxConstraints = constraints;
     orientation = currentOrientation;
@@ -41,7 +41,7 @@ class SizerUtil {
     log("Width $width  Height $height");
 
     ratio = width / height;
-    double pixelDensity = window.devicePixelRatio;
+    double pixelDensity = MediaQuery.of(context).devicePixelRatio;
     ratio = (ratio) + ((pixelDensity + ratio) / 2);
 
     // Sets ScreenType

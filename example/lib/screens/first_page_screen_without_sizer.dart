@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FirstPageScreenWithoutSizer extends StatefulWidget {
-  FirstPageScreenWithoutSizer({
+  const FirstPageScreenWithoutSizer({
     Key? key,
   }) : super(key: key);
 

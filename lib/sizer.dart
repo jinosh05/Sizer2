@@ -6,7 +6,6 @@ library sizer_pro;
 
 import 'dart:developer';
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/widgets.dart';

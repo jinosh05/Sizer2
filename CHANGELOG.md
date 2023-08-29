@@ -162,3 +162,8 @@
 
 * Removed unwanted dependencies
 * Readme updated
+
+
+## [2.1.1] - 29.08.2023.
+
+* Fixed the Analytical warning
