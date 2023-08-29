@@ -48,7 +48,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer_pro: ^2.1.0
+  sizer_pro: ^2.1.1
 ```
 
 # Parameters ⚙️ 
@@ -177,3 +177,8 @@ import 'package:sizer_pro/sizer.dart';
 ## Issue and feedback 💭 
 
 If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/jinosh05/sizer_pro/issues) for us to have a discussion on it.
+
+
+## Contributing
+
+Contributions are welcome, please submit a PR :)
