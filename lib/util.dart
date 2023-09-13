@@ -30,7 +30,8 @@ class SizerUtil {
     orientation = currentOrientation;
 
     // Sets screen width and height
-    if (orientation == Orientation.portrait) {
+    if (orientation == Orientation.portrait ||
+        !(Platform.isAndroid || Platform.isIOS)) {
       width = boxConstraints.maxWidth;
       height = boxConstraints.maxHeight;
     } else {
@@ -48,8 +49,7 @@ class SizerUtil {
     if (kIsWeb) {
       deviceType = DeviceType.web;
     } else if (Platform.isAndroid || Platform.isIOS) {
-      if ((orientation == Orientation.portrait && width < 600) ||
-          (orientation == Orientation.landscape && height < 600)) {
+      if (width < 600) {
         deviceType = DeviceType.mobile;
       } else {
         deviceType = DeviceType.tablet;
