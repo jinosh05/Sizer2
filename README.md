@@ -48,7 +48,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer_pro: ^2.1.1
+  sizer_pro: ^2.1.2
 ```
 
 # Parameters ⚙️ 

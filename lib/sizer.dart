@@ -4,12 +4,12 @@
 */
 library sizer_pro;
 
-import 'dart:developer';
-import 'dart:io';
+import "dart:developer";
+import "dart:io";
 
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter/widgets.dart';
+import "package:flutter/foundation.dart" show kIsWeb;
+import "package:flutter/widgets.dart";
 
-part 'extension.dart';
-part 'util.dart';
-part 'widget.dart';
+part "extension.dart";
+part "util.dart";
+part "widget.dart";

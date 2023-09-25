@@ -167,3 +167,7 @@
 ## [2.1.1] - 29.08.2023.
 
 * Fixed the Analytical warning
+
+## [2.1.2] - 29.08.2023.
+
+* Increased Dart SDK Constraints
