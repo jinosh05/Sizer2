@@ -1,6 +1,8 @@
-part of sizer_pro;
+part of "sizer.dart";
 
 class SizerUtil {
+  SizerUtil();
+
   /// Device's BoxConstraints
   static late BoxConstraints boxConstraints;
 
@@ -23,8 +25,11 @@ class SizerUtil {
 
   /// Sets the Screen's size and Device's Orientation,
   /// BoxConstraints, Height, and Width
-  static void setScreenSize(BoxConstraints constraints,
-      Orientation currentOrientation, BuildContext context) {
+  static void setScreenSize(
+    BoxConstraints constraints,
+    Orientation currentOrientation,
+    BuildContext context,
+  ) {
     // Sets boxconstraints and orientation
     boxConstraints = constraints;
     orientation = currentOrientation;
@@ -41,8 +46,8 @@ class SizerUtil {
     log("Width $width  Height $height");
 
     ratio = width / height;
-    double pixelDensity = MediaQuery.of(context).devicePixelRatio;
-    ratio = (ratio) + ((pixelDensity + ratio) / 2);
+    final double pixelDensity = MediaQuery.of(context).devicePixelRatio;
+    ratio = ratio + ((pixelDensity + ratio) / 2);
 
     // Sets ScreenType
     if (kIsWeb) {
@@ -66,7 +71,7 @@ class SizerUtil {
   }
 
   //for responsive web
-  static getWebResponsiveSize({smallSize, mediumSize, largeSize}) {
+  static dynamic getWebResponsiveSize({smallSize, mediumSize, largeSize}) {
     return width < 600
         ? smallSize //'phone'
         : width >= 600 && width <= 1024

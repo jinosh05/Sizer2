@@ -1,6 +1,6 @@
 /*
- * Created by Urmish patel on 2018/9/29.
- * email: urmishpatel9@gmail.com
+ * Modified by Jinosh on 2023/9/25.
+ * email: jinosh05@gmail.com
 */
 library sizer_pro;
 
