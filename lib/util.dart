@@ -12,7 +12,8 @@ class SizerUtil {
   static late double ratio;
   static late double width;
 
-  /// Initializes device properties based on provided constraints, orientation, and context.
+  /// Initializes device properties based on provided constraints,
+  /// orientation, and context.
   static void init(
     BoxConstraints constraints,
     Orientation currentOrientation,
@@ -35,7 +36,8 @@ class SizerUtil {
     deviceType = _getDeviceType();
   }
 
-  /// Private method to determine the device type based on platform and screen size.
+  /// Private method to determine the device type based on platform
+  /// and screen size.
   static DeviceType _getDeviceType() {
     if (kIsWeb) {
       return DeviceType.web;

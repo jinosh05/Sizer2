@@ -172,6 +172,6 @@
 
 * Increased Dart SDK Constraints
 
-## [2.1.3] - 27.09.2023.
+## [2.2.0] - 27.09.2023.
 
 * Documented Code using AI
