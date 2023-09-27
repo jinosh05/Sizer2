@@ -1,22 +1,23 @@
 part of "sizer.dart";
 
+/// Extension methods for numerical values to provide responsive sizing.
 extension SizerExt on num {
-  /// Calculates the height depending on the device's screen size
+  /// Calculates the height depending on the device's screen size.
   ///
-  /// Eg: 20.h -> will take 20% of the screen's height
+  /// Example: `20.h` will take 20% of the screen's height.
   double get h => this * SizerUtil.height / 100;
 
-  /// Calculates the width depending on the device's screen size
+  /// Calculates the width depending on the device's screen size.
   ///
-  /// Eg: 20.w -> will take 20% of the screen's width
+  /// Example: `20.w` will take 20% of the screen's width.
   double get w => this * SizerUtil.width / 100;
 
-  /// Calculates the sp (Scalable Pixel) depending on the device's screen size
+  /// Calculates the sp (Scalable Pixel) depending on the device's screen size.
   double get sp => (SizerUtil.ratio * this * 0.77) + this;
 
-  /// Calculates the font depending on the device's screen size
-  /// You can also use it for IconSize too.
+  /// Calculates the font size depending on the device's screen size.
+  /// Can also be used for Icon size.
   ///
-  /// Eg: 8.f -. will give responsive 8 font size
+  /// Example: `8.f` will give a responsive font size of 8.
   double get f => (SizerUtil.ratio * this * 0.125) + this * 1.90;
 }
