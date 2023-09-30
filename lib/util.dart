@@ -5,11 +5,53 @@ class SizerUtil {
   SizerUtil._(); // Private constructor to prevent instantiation.
 
   // Device properties
+
+  /// The `BoxConstraints` representing the device's screen size.
+  ///
+  /// This property stores information about the minimum and maximum width
+  /// and height that a widget can have. It is used for determining the device's
+  /// screen constraints and is essential for responsive design calculations.
   static late BoxConstraints boxConstraints;
+
+  /// The type of device running the application.
+  ///
+  /// This property is determined based on the platform
+  /// (e.g., Android, iOS, web)
+  /// and the screen size. It categorizes the device as mobile, tablet, web, or
+  /// other platforms. It helps in making device-specific design decisions.
   static late DeviceType deviceType;
+
+  /// The height of the device's screen.
+  ///
+  /// This property represents the height of the device's screen
+  /// in logical pixels.It is calculated based on the device's orientation
+  /// (portrait or landscape) and the `boxConstraints`.
+  ///  The height is used for responsive design calculations.
   static late double height;
+
+  /// The current orientation of the device.
+  ///
+  /// This property can have values
+  /// `Orientation.portrait` or `Orientation.landscape`.
+  /// It represents the physical orientation of the device
+  /// and is used to adapt the
+  /// user interface accordingly.
   static late Orientation orientation;
+
+  /// The ratio of the device's width to its height.
+  ///
+  /// This property is calculated using the `width` and `height` properties and
+  /// represents the aspect ratio of the device's screen. It can be used for
+  /// various responsive design calculations.
   static late double ratio;
+
+  /// The width of the device's screen.
+  ///
+  /// This property represents the width of the device's screen
+  /// in logical pixels. Similar to the `height` property,
+  /// it is calculated based on the device's orientation (portrait or landscape)
+  /// and the `boxConstraints`.
+  /// The width is used for responsive design calculations.
   static late double width;
 
   /// Initializes device properties based on provided constraints,
@@ -69,6 +111,3 @@ class SizerUtil {
               ? mediumSize // Tablet
               : largeSize; // Desktop
 }
-
-/// Enum to represent the type of device.
-enum DeviceType { mobile, tablet, web, mac, windows, linux, fuchsia }

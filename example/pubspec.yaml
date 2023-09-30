@@ -11,7 +11,7 @@ dependencies:
   sizer_pro:
     path: ../
   smooth_page_indicator: ^1.1.0
-  google_fonts: ^4.0.4
+  google_fonts: any
   flutter:
     sdk: flutter
 
